@@ -1,0 +1,58 @@
+@import "vars"
+
+*
+    -webkit-tap-highlight-color: transparent
+    scroll-behavior: smooth
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+input,
+textarea,
+button
+    background: none
+    border: none
+    outline: none
+    font: inherit
+
+input,
+textarea
+    color: inherit
+    &::placeholder
+        font: inherit
+        color: inherit
+
+button
+    cursor: pointer
+
+body,
+html
+    height: 100%
+    overflow-x: hidden
+
+html
+    font-size: 10px
+    
+body
+    display: flex
+    flex-direction: column
+    background: #ffff
+    font-weight: 400
+    
+a
+    text-decoration: none
+    color: inherit
+    display: block
+    text-align: center
+    
+address
+    font-style: normal
+
+ul,
+li
+    list-style: none
+
+img
+    object-fit: cover
+    object-position: center
+    height: auto

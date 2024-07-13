@@ -1,0 +1,32 @@
+@import "vars"
+
+html, body
+    font-family: 'Muller'
+    color: $wh
+main
+    background: $bg
+.wrapper
+    max-width: 1400px
+    margin: 0 auto
+.button--white
+    @extend %btn-wh
+.button--transparent
+    @extend %btn-transp
+.button--blue
+    @extend %btn-bl 
+.text-heading
+    @extend %text-title
+.text-description
+    @extend %text-descr
+    opacity: .5
+.clients__cards-item
+    @extend %card-gray
+    max-width: 381px
+.section-title
+    @extend %text-slogan
+.mail__send-inp
+    @extend %text-input
+    color: $blue-dark
+    border-radius: 4.8rem
+    background: $wh
+    padding: 2.2rem 15rem 2.2rem 3.3rem

@@ -1,0 +1,67 @@
+@import "mixins"
+// colors
+$bg: #1E2020
+$wh: #FFFFFF
+$gray: #252828
+$gray-hover: #C4C4C4
+$orange: #FE9F43
+$orange-2: rgba(254, 159, 67, .5)
+$text: rgba(255, 255, 255, .5)
+$blue: #1B3F5A
+$blue-dark: #0D192A
+// text
+%text-14
+	@include Text(400, 1.4rem)
+%text-18
+	@include Text(400, 1.8rem)
+	line-height: 140%
+%text-18-m
+	@include Text(500, 1.8rem)
+	line-height: 140%
+%text-input
+	@include Text(400, 2.4rem)
+	line-height: 140%
+%text-slogan
+	@include Text(700, 3.6rem)
+	line-height: 110%
+%text-title
+	@include Text(700, 2.4rem)
+	line-height: 150%
+%text-descr
+	@include Text(400, 2rem)
+	line-height: 140%
+// Cards
+%card-gray
+	background: $gray
+	border: 2px solid rgba(218, 218, 218, .15)
+	border-radius: 3.4rem
+	padding: 1.4rem 2.8rem
+%card-blue
+	background: $blue
+	border: 2px solid rgba(218, 218, 218, .15)
+	border-radius: 3.4rem
+	padding: 8rem 4rem
+	color: $wh
+// Buttons
+%btn-wh
+	background: $wh
+	border-radius: 15.5rem
+	padding: 1.6rem 3.2rem 
+	color: #000000
+	&:hover
+		text-decoration: underline
+%btn-transp
+	background: transparent
+	border: 1px solid $wh
+	border-radius: 15.5rem 
+	padding: 1.6rem 3.2rem 
+	color: $wh
+	&:hover
+		text-decoration: underline
+%btn-bl
+	background: $blue
+	border-radius: 15.5rem 
+	padding: 1.6rem 3.2rem
+	color: $wh
+	&:hover 
+		text-decoration: underline
